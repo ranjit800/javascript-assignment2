@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="problem3.css">
+</head>
+
+<body>
+  <h1 class="head"> ID Card Generator</h1>
+
+  <div class="mainbox">
+    <center>
+      <div class="info" style="flex-grow: 100">
+        <form>
+          <h2 class="h2">Enter Student Details</h2>
+          <label>Enter Name:</label>
+          <input type="text" id="inname" placeholder="Name">
+          <label>Enter College Name:</label>
+          <input type="text" id="incollege" placeholder=" 🏫 College Name">
+          <label>Enter Location:</label>
+          <input type="text" id="inlocation" placeholder=" 🌍Location">
+
+          <label for="file" class="upload">Enter Student's Picture:</label> <br>
+          <input type="file" id="file" class="filee" accept="image/*" onchange="loadImage(event)">
+
+
+        </form>
+        <button onclick="generateCard()" value="click" id="generete-card">Generete Card</button>
+      </div>
+    </center>
+
+    <div class="mainn" style="flex-grow: 100">
+      <h2 class="idcard">Genereted Id Card</h2>
+      <!-- <div class="onemore">
+        <div class="card" id="results">           -->
+      <table>
+        <td class="td">
+          <img class="img1" src="" id="imgDisplayed">
+        </td>
+        <td class="td2" rowspan="8">
+          <li>
+            <span class="span1">Name:</span>
+            <span id="name" class="value"> </span>
+          </li>
+          <br>
+          <li>
+            <span class="span1">College:</span>
+            <span id="college" class="value"></span>
+          </li>
+          <br>
+          <li>
+            <span class="span1">Location:</span>
+            <span id="location" class="value"> </span>
+          </li>
+        </td>
+      </table>
+      <!-- </div>
+    </div> -->
+    </div>
+  </div>
+  <script src="problem3.js"></script>
+</body>
+
+</html
